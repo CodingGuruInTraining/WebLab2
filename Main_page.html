@@ -1,0 +1,133 @@
+<!DOCTYPE html>   <!--Specifying HTML 5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark's Project</title>
+
+    <!-- The viewport is the visible area of a page. Pages may be wider
+    than the screen or browser window; and pages are often longer than
+    the browser window. This tag sets the width of the page equal to the
+    width of the browser window. The height stays the same. -->
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <!-- Include Bootstrap. This downloads Bootstrap from a CDN. You can
+     also host Bootstrap on your server, but it's usually faster for the
+     user for their browser to fetch it from a CDN. -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--This uses highlight.js : javascript and CSS to not only display code in a code-y way,-->
+    <!--but also adds language-specific syntax highlighting. More info at https://highlightjs.org/
+    To make code look pretty, add the following three lines at the top of your file, in the <head>
+    and then surround your code with <pre><code>.... </code></pre> tags. Highlight.js will find it and style it.-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+
+<!--<style>-->
+    <!--.jumbotron{-->
+        <!--color: rgb(210, 226, 210);-->
+        <!--text-shadow: 2px 2px #2a2a2a;-->
+    <!--}-->
+<!--</style>-->
+
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <!--These elements will be in larger text, inside the Jumbotron-->
+                <h1>Mark's Project of Amazingness!</h1>
+                <P>(Really, you don't have anywhere better to be???)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <h1>Description:</h1>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>This program is meant to be a travel app where you choose your vacation destination, which activities you would like to do, and the time frame of your trip. The 'mouseovers' were challenging for me, but the result is cool!</p>
+            <p>Those who are interested can see it on GitHub, but note that it isn't completed still: https://github.com/CodingGuruInTraining/Planetary-Travel</p>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-8">
+            <pre>
+                <code>
+                    var pos = this.PointToScreen(ctrl.Location);
+                    pos = picboxPlanets.PointToClient(pos);
+                    ctrl.Parent = picboxPlanets;
+                    ctrl.Location = pos;
+                    ctrl.BackColor = Color.Transparent;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-8">
+            <pre>
+                <code>
+                    private void Planets_MouseOver(object sender, EventArgs e){
+                    // MouseOver event that displays the name of
+                    // the planet as user mouses over.
+
+                    // Creates string variable with the name of
+                    // the sender (selected label).
+                    string lblName = ((Label)sender).Name;
+                    // Removes "lblz" from string and adds to label.
+                    lblzPlanetName.Text = lblName.Remove(0,4);
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col-md-8">
+            <pre>
+                <code>
+                    private void destinationSelect(string description, _
+                        string item1, string item2, string item3, string _
+                        insurance, string vname)
+                    // This function populates certain labels and listbox
+                    // data based on received parameters.
+                    lblInfoDisplay.Text = description;
+                    cboxInsurance.Text = insurance + " Insurance?";
+                    clbActivities.Items.Add(item1);
+                    clbActivities.Items.Add(item2);
+                    clbActivities.Items.Add(item3);
+                    lblActivities.Text = "Things to do on " + vname;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

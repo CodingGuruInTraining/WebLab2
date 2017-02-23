@@ -1,0 +1,18 @@
+.jumbotron{
+    background-image: url("space_background2.jpg");
+    background-size: 1140px 400px;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(210, 226, 210);
+    text-shadow: 2px 2px #2a2a2a;
+}
+
+body {
+    background-image: repeating-linear-gradient(#3a6b86 20%, #82c161 40%, #2a2a2a 75%);
+    font-weight: bold;
+}
+
+p {
+    font-size: 120%;
+}
+
